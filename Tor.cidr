@@ -1,4 +1,8 @@
-# wget -qO- https://check.torproject.org/exit-addresses|grep '^ExitAddress'|cut -d' ' -f2|sort -Vu >Tor.cidr
+# AS60729
+185.177.207.0/24
+185.220.101.0/24
+185.220.102.0/24
+# wget -qO- https://check.torproject.org/exit-addresses|grep '^ExitAddress'|cut -d' ' -f2|sort -Vu >>Tor.cidr
 2.56.10.36
 2.58.56.35
 2.58.56.43
