@@ -7,6 +7,8 @@
 23.190.144.0/24
 103.232.206.0/24
 103.232.207.0/24
+# AS215125
+192.42.116.0/24
 # wget -qO- https://check.torproject.org/exit-addresses|grep '^ExitAddress'|cut -d' ' -f2|sort -Vu >>Tor.cidr
 2.56.10.36
 2.58.56.35
