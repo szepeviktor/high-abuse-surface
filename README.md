@@ -13,7 +13,6 @@ tail -f /var/log/apache2/*access.log | high-abuse-surface/ip-label.py
 ```php
 if (
     // Browsers send HTTP/2 request, except company proxies, firewalls
-    isset($_SERVER['SERVER_PROTOCOL']) && $_SERVER['SERVER_PROTOCOL'] === 'HTTP/1.1'
     ($_SERVER['SERVER_PROTOCOL'] ?? '') === 'HTTP/1.1'
     // Connection: header is not included in HTTP/2 requests
     && ($_SERVER['HTTP_CONNECTION'] ?? '') === 'keep-alive'
