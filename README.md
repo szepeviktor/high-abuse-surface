@@ -2,6 +2,8 @@
 
 You find known risky networks in this repo and a Pythons script that replaces client IPs with network names.
 
+Made on top of [known hostile networks](https://github.com/szepeviktor/debian-server-tools/tree/master/security/myattackers-ipsets).
+
 ## Usage
 
 ```shell
