@@ -1,10 +1,13 @@
 # High Abuse Surface
 
-You find known risky networks in this repo and a Pythons script that replaces client IPs with network names.
+Curated IP range lists of networks frequently associated with automated abuse.
+The repository is data-first: you can consume the CIDR lists with any tooling.
+
+A Python script that replaces client IPs with network names is also available.
 
 Made on top of [known hostile networks](https://github.com/szepeviktor/debian-server-tools/tree/master/security/myattackers-ipsets).
 
-## Usage
+## Log monitoring
 
 ```shell
 tail -f /var/log/apache2/*access.log | high-abuse-surface/ip-label.py
