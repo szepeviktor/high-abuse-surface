@@ -1,17 +1,20 @@
 # High Abuse Surface
 
 Curated IP range lists of networks frequently associated with automated abuse.
-The repository is data-first: you can consume the CIDR lists with any tooling.
 
-A Python script that replaces client IPs with network names is also available.
+The repository is data-first: you can consume the CIDR lists with any tooling.
 
 Made on top of [known hostile networks](https://github.com/szepeviktor/debian-server-tools/tree/master/security/myattackers-ipsets).
 
-## Log monitoring
+## Example tools
+
+A Python script that replaces client IPs with network names.
 
 ```shell
-tail -f /var/log/apache2/*access.log | high-abuse-surface/ip-label.py
+tail -f /var/log/apache2/*access.log | high-abuse-surface/tools/ip-label.py
 ```
+
+A WordPress MU plugin to stop Windows UA spoofing.
 
 ## Analyze HTTP requests from bots
 
