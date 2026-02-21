@@ -6,13 +6,15 @@ The repository is data-first: you can consume the CIDR lists with any tooling.
 
 Made on top of [known hostile networks](https://github.com/szepeviktor/debian-server-tools/tree/master/security/myattackers-ipsets).
 
-## Example tools
+## Log tool
 
 A Python script that replaces client IPs with network names.
 
 ```shell
-tail -f /var/log/apache2/*access.log | high-abuse-surface/tools/ip-label.py
+tail -f /var/log/apache2/*access.log | high-abuse-surface/ip-label.py
 ```
+
+## Example tools
 
 A WordPress MU plugin to stop Windows UA spoofing.
 

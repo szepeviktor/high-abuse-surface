@@ -67,7 +67,7 @@ def main():
         if lab is None:
             write_line(line)
         else:
-            write_line(f"{lab} {rest}")
+            write_line("{} {}".format(lab, rest))
 
 
 if __name__ == "__main__":
